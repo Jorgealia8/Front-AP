@@ -1,5 +1,3 @@
-import { Menu } from './menu';
-
 import './menuMovil.css';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
@@ -51,7 +49,6 @@ export function MenuMovil() {
     function handleClick() {
         setClicked(!clicked);
     }
-    console.log(clicked);
     const user = useSelector((store: iState) => store.user);
     function handleSubmit() {
         localStorage.clear();
