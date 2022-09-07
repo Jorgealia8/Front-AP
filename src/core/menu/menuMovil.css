@@ -9,5 +9,14 @@
 .buttonMenu {
     position: absolute;
     z-index: 2;
-    margin-left: 88%;
+    margin-left: 82%;
+}
+.iconInstagram {
+    width: 25px;
+}
+.wrapper_iconInstagram {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

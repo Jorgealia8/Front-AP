@@ -15,8 +15,7 @@ export function DetailsWorkout({ workout }: { workout: iWorkout }) {
             <div className="containerDetails">
                 <div className="containerDetails__video">
                     <iframe
-                        width="560"
-                        height="315"
+                        className="iframe"
                         src={workout.video + '?showinfo=0&rel=0&'}
                         title="YouTube video player"
                         frameBorder="0"
