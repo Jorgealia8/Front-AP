@@ -102,6 +102,16 @@ export function MenuMovil() {
                                 Salir
                             </button>
                         </div>
+                        <a
+                            className="wrapper_iconInstagram"
+                            href="https://www.instagram.com/aguado.pilates/?hl=es"
+                        >
+                            <img
+                                className="iconInstagram"
+                                src="https://firebasestorage.googleapis.com/v0/b/aguado-pilates.appspot.com/o/iconos%2Finstagram.png?alt=media&token=7a84b08c-482c-4352-8331-b5855b9bdc17"
+                                alt="Instagram"
+                            />
+                        </a>
                     </div>
                 </>
             );
@@ -133,7 +143,16 @@ export function MenuMovil() {
                                 ))}
                             </ul>
                         </nav>
-                        <div className="wrapper_buttonLogout"></div>
+                        <a
+                            className="wrapper_iconInstagram"
+                            href="https://www.instagram.com/aguado.pilates/?hl=es"
+                        >
+                            <img
+                                className="iconInstagram"
+                                src="https://firebasestorage.googleapis.com/v0/b/aguado-pilates.appspot.com/o/iconos%2Finstagram.png?alt=media&token=7a84b08c-482c-4352-8331-b5855b9bdc17"
+                                alt="Instagram"
+                            />
+                        </a>
                     </div>
                 </>
             );
