@@ -1,0 +1,23 @@
+.imageWorkout {
+    width: 90%;
+}
+
+.imageWorkout:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.buttonRemove {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: #7f2339;
+    color: white;
+    border: none;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 90px;
+}
+.buttonRemove:hover {
+    background-color: gray;
+}

@@ -1,0 +1,35 @@
+.menuList {
+    list-style: none;
+    text-align: center;
+    margin-top: 5rem;
+    padding: 0;
+}
+.menu__link {
+    text-decoration: none;
+}
+.menu__title {
+    font-size: 0.45cm;
+    color: rgba(0, 0, 0, 0.681);
+    font-weight: normal;
+}
+
+@media (min-width: 600px) {
+    .menuList {
+        display: flex;
+        justify-content: space-around;
+        margin-top: revert;
+    }
+    .menu__title {
+        font-size: 0.45cm;
+        color: rgba(0, 0, 0, 0.681);
+        font-weight: normal;
+    }
+    .menu__title:hover {
+        color: #000000;
+        font-weight: bold;
+    }
+
+    .menu__item {
+        margin-right: 1.8rem;
+    }
+}

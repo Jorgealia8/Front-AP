@@ -1,0 +1,13 @@
+.menuMovil {
+    display: initial;
+    position: absolute;
+    background-color: #eee8ec;
+    width: 97%;
+    height: 400%;
+    z-index: 1;
+}
+.buttonMenu {
+    position: absolute;
+    z-index: 2;
+    margin-left: 88%;
+}

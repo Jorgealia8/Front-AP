@@ -1,0 +1,85 @@
+.logo {
+    width: 40%;
+}
+.menu {
+    display: none;
+    position: absolute;
+    background-color: #eee8ec;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.buttonMenu {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 4%;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.buttonLogout {
+    cursor: pointer;
+    font-size: 0.45cm;
+    color: rgba(0, 0, 0, 0.367);
+    background-color: #eee8ec;
+    font-weight: bold;
+    border: none;
+    border-left: 0.5px solid rgba(128, 128, 128, 0.44);
+    width: 4rem;
+    height: 2.5rem;
+    margin-top: 7px;
+}
+.wrapper_buttonLogout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    .buttonMenu {
+        display: none;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        height: 85px;
+        width: 100%;
+        background-color: #eee8ec;
+    }
+
+    .menu {
+        position: relative;
+        background-color: #eee8ec;
+
+        text-decoration: none;
+        display: flex;
+    }
+
+    .logo {
+        padding-left: 7%;
+        width: 40%;
+    }
+    .buttonLogout {
+        cursor: pointer;
+        font-size: 0.45cm;
+        color: rgba(0, 0, 0, 0.367);
+        background-color: #eee8ec;
+        font-weight: bold;
+        border: none;
+        border-left: 0.5px solid rgba(128, 128, 128, 0.44);
+        width: 4rem;
+        height: 2.5rem;
+        margin-top: 7px;
+    }
+    .buttonLogout:hover {
+        color: black;
+    }
+
+    .wrapper_buttonLogout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -2%;
+        margin-right: 2%;
+    }
+}

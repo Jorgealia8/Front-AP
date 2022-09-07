@@ -1,0 +1,105 @@
+.firstFilter {
+    display: flex;
+    justify-content: space-around;
+}
+.secondFilter1 {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+}
+.secondFilter2 {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+}
+.imageFilter {
+    cursor: pointer;
+    width: 18%;
+}
+.wrapperImageFilter {
+    width: 18%;
+    background-color: rgba(0, 0, 0, 0.785);
+    position: absolute;
+}
+.imageFilterPrueba {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+}
+
+.imageFilter2 {
+    cursor: pointer;
+    width: 18%;
+    margin: 2rem;
+}
+
+.wrapperTitleWorkout {
+    text-align: center;
+}
+
+.titleWorkout {
+    font-size: 2.5em;
+    margin-bottom: 5rem;
+    color: black;
+}
+.wrapperTitleModality {
+    text-align: center;
+}
+
+.titleModality {
+    font-size: 1.5em;
+    color: black;
+    margin-top: -50px;
+}
+.titleModalitySecond {
+    color: black;
+    font-size: 1.5em;
+    margin-top: -30px;
+}
+.titleModalitySecondItalics {
+    margin-left: 0.5rem;
+    font-size: 1.7em;
+    margin-top: -30px;
+    font-style: italic;
+}
+.wrapper__titleModalitySecond {
+    display: flex;
+    justify-content: center;
+}
+.titleModality2 {
+    margin-top: 65px;
+}
+.titleModality3 {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+.mystyle {
+    filter: brightness(35%);
+}
+
+.tik {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    margin-left: -3%;
+    margin-top: 19%;
+}
+.tikYes {
+    visibility: initial !important;
+}
+.wrapperFilter {
+    width: 18%;
+}
+.filterImage {
+    cursor: pointer;
+    width: 100%;
+}
+.arrow {
+    font-size: 4em;
+    margin-top: -20px;
+}
+
+.containerWorkoutPage {
+    color: rgb(0, 0, 0);
+}
