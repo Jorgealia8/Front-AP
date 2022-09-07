@@ -11,7 +11,9 @@ footer {
 .footer__logo {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    width: 25%;
+    margin-left: 1rem;
+    width: 35px;
+    height: 55px;
 }
 .instagram {
     display: none;
@@ -31,6 +33,21 @@ footer {
     flex-direction: column;
     justify-content: center;
     direction: rtl;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+.copyright__ap {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: small;
+}
+.copyright__cookies {
+    font-size: 3.5mm;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: italic;
+    font-size: x-small;
+    cursor: pointer;
 }
 
 @media (min-width: 600px) {
@@ -57,6 +74,8 @@ footer {
         flex-direction: column;
         justify-content: center;
         direction: rtl;
+        margin-top: initial;
+        margin-bottom: initial;
     }
 
     .copyright__cookies {
@@ -69,11 +88,6 @@ footer {
     .copyright__cookies:hover {
         color: rgb(62, 62, 62);
         font-weight: bold;
-    }
-
-    .copyright__ap {
-        margin-top: 0;
-        margin-bottom: 0;
     }
 
     .instagram {
