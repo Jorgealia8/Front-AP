@@ -50,7 +50,7 @@ export function HomePage() {
                     <WorkoutListThree workouts={workouts}></WorkoutListThree>
                 </div>
 
-                <p className="titleSection">Feedbacks</p>
+                <p className="titleSection titleFeedbacks">Feedbacks</p>
                 <section className="testimonials">
                     <p className="testimonials__item">
                         "BIENESTAR en toda la amplitud de la palabra"

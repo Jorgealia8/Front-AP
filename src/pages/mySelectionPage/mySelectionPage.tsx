@@ -21,6 +21,13 @@ export function MySelectionPage() {
                             </button>
                         </Link>
                     </div>
+                    <div className="wrapper__imageInspiration">
+                        <img
+                            className="imageInspiration"
+                            src="https://firebasestorage.googleapis.com/v0/b/aguado-pilates.appspot.com/o/Login%2Fmicuenta.jpg?alt=media&token=3ed9a8dd-6a5f-434c-a973-a1401df60c1c"
+                            alt="Imagen inspiración manos"
+                        />
+                    </div>
                 </main>
             </>
         );

@@ -1,33 +1,26 @@
 .containerContactPage {
     text-align: center;
 }
-.imageContact {
-    border-radius: 50%;
-    height: 400px;
-    margin-bottom: 3rem;
-}
-.title__contact {
-    font-size: 2.5em;
-}
-.wrapperContact {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 2rem;
-}
-
-.paragraph__contact {
-    width: 30%;
-    text-align: start;
-    text-align: justify;
-}
-
 .wrapperContact__info {
     text-align: start;
     font-weight: bold;
-    margin-left: -19%;
+    font-size: small;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
-.containerContactIcon {
-    display: flex;
+.imageContact {
+    border-radius: 50%;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+.title__contact {
+    font-size: x-large;
+}
+.paragraph__contact {
+    text-align: justify;
+    font-size: small;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .iconContact {
     width: 35px;
@@ -47,5 +40,50 @@
     height: 30px;
     border-radius: 8px;
     margin-right: 1rem;
+    margin-left: 1px;
     margin-top: 0.3rem;
+}
+.containerContactIcon {
+    margin-left: 2rem;
+    display: flex;
+}
+@media (min-width: 600px) {
+    .containerContactPage {
+        text-align: center;
+    }
+    .imageContact {
+        border-radius: 50%;
+        height: 350px;
+        margin-bottom: 3rem;
+    }
+    .title__contact {
+        font-size: 2.5em;
+    }
+    .wrapperContact {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+    }
+
+    .paragraph__contact {
+        width: 30%;
+        text-align: start;
+        text-align: justify;
+        font-size: initial;
+        margin-left: initial;
+        margin-right: initial;
+    }
+
+    .wrapperContact__info {
+        text-align: start;
+        font-weight: bold;
+        margin-left: -19%;
+        font-size: initial;
+        margin-bottom: initial;
+        margin-top: initial;
+    }
+    .containerContactIcon {
+        display: flex;
+        margin-left: initial;
+    }
 }

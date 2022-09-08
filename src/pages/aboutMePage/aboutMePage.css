@@ -1,16 +1,7 @@
-.imageBowl {
-    width: 30%;
-}
-.wrapperAbout {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 4rem;
-}
 .containerAboutMe {
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 80%;
-    margin-left: 10%;
+    margin-left: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,40 +11,116 @@
     line-height: 21px;
     word-spacing: 1px;
 }
+.title__aboutMe {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 2rem;
+    margin-left: 13%;
+    color: black;
+}
+.imageBowl {
+    width: 30%;
+    margin-left: 1rem;
+}
 .paragraph__first {
-    margin-left: 6rem;
-    margin-top: -4%;
-    width: 40%;
+    margin-left: 10rem;
+    margin-top: -30%;
+    width: 55%;
+    font-size: small;
 }
 .imageWorking {
     width: 45%;
-    margin-top: -6%;
+    margin-left: 60%;
 }
-
-.paragraph__second {
-    width: 55%;
-    margin-right: 6rem;
-}
-
 .imageStretching {
     width: 55%;
     margin-right: 6rem;
+    display: none;
 }
-
 .imageHipos {
     width: 40%;
-    margin-left: 6rem;
-
-    margin-top: -10%;
-}
-
-.paragraph__fourth {
-    margin-right: 10%;
-}
-
-.title__aboutMe {
-    font-size: 2.5em;
-    margin-top: 15px;
+    margin-left: 12rem;
+    margin-top: -50%;
     margin-bottom: 3rem;
-    color: black;
+}
+.paragraph__second {
+    display: none;
+}
+.paragraph__fourth {
+    margin-right: 45%;
+    font-size: small;
+}
+
+.paragraph__third {
+    font-size: small;
+}
+@media (min-width: 600px) {
+    .paragraph__third {
+        font-size: initial;
+    }
+    .imageBowl {
+        width: 30%;
+        margin-left: initial;
+    }
+    .wrapperAbout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+    .containerAboutMe {
+        margin-top: 2rem;
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        color: #000000;
+        line-height: 21px;
+        word-spacing: 1px;
+    }
+    .paragraph__first {
+        margin-left: 6rem;
+        margin-top: -4%;
+        width: 40%;
+        font-size: initial;
+    }
+    .imageWorking {
+        width: 45%;
+        margin-top: -6%;
+        margin-left: 0;
+    }
+
+    .paragraph__second {
+        display: initial;
+        width: 55%;
+        margin-right: 6rem;
+    }
+
+    .imageStretching {
+        width: 55%;
+        margin-right: 6rem;
+        display: initial;
+    }
+
+    .imageHipos {
+        width: 40%;
+        margin-left: 6rem;
+        margin-top: -10%;
+        margin-bottom: initial;
+    }
+
+    .paragraph__fourth {
+        margin-right: 10%;
+    }
+
+    .title__aboutMe {
+        font-size: 2.5em;
+        margin-top: 15px;
+        margin-bottom: 3rem;
+        color: black;
+        margin-left: initial;
+    }
 }

@@ -14,10 +14,22 @@
     border: none;
     width: 7rem;
     height: 2rem;
-    margin-left: 5rem;
     border-radius: 90px;
 }
 
 .buttonLogin:hover {
     background-color: rgb(193, 193, 193);
+}
+
+@media (min-width: 600px) {
+    .buttonLogin {
+        cursor: pointer;
+        margin-top: 3rem;
+        background-color: #bbed33;
+        border: none;
+        width: 7rem;
+        height: 2rem;
+        margin-left: 5rem;
+        border-radius: 90px;
+    }
 }
