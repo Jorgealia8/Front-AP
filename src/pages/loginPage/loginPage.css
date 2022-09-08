@@ -1,27 +1,14 @@
+.imageLogin {
+    display: none;
+}
 .wrapperLogin {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
     margin-bottom: 3rem;
 }
-.imageLogin {
-    margin-left: -22%;
-    height: 24rem;
-}
-
 .titleLogin {
+    font-size: larger;
     text-align: center;
-    font-size: 2.5em;
-}
-
-.titleRegister {
-    margin-top: 4rem;
-}
-
-.wrapperMyCountButton {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .wrapper__eliminateForm {
     margin-top: 5rem;
@@ -29,15 +16,55 @@
 .buttonElimination {
     cursor: pointer;
     margin-top: -19rem;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     background-color: #7f2339;
     color: white;
     border: none;
     width: 7rem;
     height: 2rem;
-    margin-left: 5rem;
     border-radius: 90px;
+}
+.wrapperMyCountButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .buttonElimination:hover {
     background-color: rgb(142, 142, 142);
+}
+.wrapperLogin {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-left: initial;
+    margin-right: initial;
+}
+@media (min-width: 600px) {
+    .imageLogin {
+        margin-left: -22%;
+        height: 24rem;
+        display: initial;
+    }
+
+    .titleLogin {
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    .titleRegister {
+        margin-top: 4rem;
+    }
+    .buttonElimination {
+        cursor: pointer;
+        margin-top: -19rem;
+        margin-bottom: 5rem;
+        background-color: #7f2339;
+        color: white;
+        border: none;
+        width: 7rem;
+        height: 2rem;
+        margin-left: 5rem;
+        border-radius: 90px;
+    }
 }
