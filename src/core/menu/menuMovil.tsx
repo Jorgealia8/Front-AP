@@ -52,7 +52,7 @@ export function MenuMovil() {
     const user = useSelector((store: iState) => store.user);
     function handleSubmit() {
         localStorage.clear();
-        window.location.href = 'http://localhost:3000';
+        window.location.href = 'https://aguadopilates.com';
     }
     if (user.name !== '') {
         optionsMenu[4] = {
