@@ -2,6 +2,7 @@
     text-align: center;
     display: grid;
     justify-items: center;
+    padding: 0;
 }
 .workoutsListWorkout {
     text-align: center;
