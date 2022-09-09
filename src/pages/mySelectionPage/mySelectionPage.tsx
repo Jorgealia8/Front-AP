@@ -8,100 +8,98 @@ import { intensityObj } from '../../models/intensity.model';
 export function MySelectionPage() {
     const materials = new Set();
     const user = useSelector((store: iState) => store.user);
-    if (user.name === '') {
+    // if (user.name === '') {
+    //     return (
+    //         <>
+    //             <main>
+    //                 <div className="wrapperInfo">
+    //                     <p>¡ Únete para crear tu propio entrenamiento !</p>
+
+    //                     <Link to="/login">
+    //                         <button className="buttonGoToRegister">
+    //                             ¡REGÍSTRATE AQUÍ!
+    //                         </button>
+    //                     </Link>
+    //                 </div>
+    //                 <div className="wrapper__imageInspiration">
+    //                     <img
+    //                         className="imageInspiration"
+    //                         src="https://firebasestorage.googleapis.com/v0/b/aguado-pilates.appspot.com/o/Login%2Fmicuenta.jpg?alt=media&token=3ed9a8dd-6a5f-434c-a973-a1401df60c1c"
+    //                         alt="Imagen inspiración manos"
+    //                     />
+    //                 </div>
+    //             </main>
+    //         </>
+    //     );
+    // } else {
+    if (user.workouts.length === 0 && user) {
         return (
             <>
-                <main>
-                    <div className="wrapperInfo">
-                        <p>¡ Únete para crear tu propio entrenamiento !</p>
-
-                        <Link to="/login">
-                            <button className="buttonGoToRegister">
-                                ¡REGÍSTRATE AQUÍ!
-                            </button>
-                        </Link>
-                    </div>
-                    <div className="wrapper__imageInspiration">
-                        <img
-                            className="imageInspiration"
-                            src="https://firebasestorage.googleapis.com/v0/b/aguado-pilates.appspot.com/o/Login%2Fmicuenta.jpg?alt=media&token=3ed9a8dd-6a5f-434c-a973-a1401df60c1c"
-                            alt="Imagen inspiración manos"
-                        />
-                    </div>
+                <main className="wrapperMain wrapperInfo">
+                    <p>Ningún entrenamiento añadido</p>
                 </main>
             </>
         );
     } else {
-        if (user.workouts.length === 0 && user) {
-            return (
-                <>
-                    <main className="wrapperMain wrapperInfo">
-                        <p>Ningún entrenamiento añadido</p>
-                    </main>
-                </>
-            );
-        } else {
-            let time = 0;
-            let material = '';
+        let time = 0;
+        let material = '';
 
-            user.workouts.forEach((item) => {
-                if (item.complementaryMaterial !== 'Sin material')
-                    materials.add(item.complementaryMaterial);
-                time = item.duration + time;
-            });
-            const materialArray = Array.from(materials);
-            materialArray.forEach((item) => {
-                material = material + ' - ' + item;
-            });
-            let intensityArray: any = [];
-            user.workouts.forEach((item) =>
-                intensityArray.push(
-                    intensityObj[item.intensity as 'Baja' | 'Media' | 'Alta']
-                )
-            );
-            let intensity = 0;
-            intensityArray.map(
-                (item: number) => (intensity = item + intensity)
-            );
-            intensity = Math.round(intensity / intensityArray.length);
-            let newIntensity = '';
-            switch (intensity) {
-                case (intensity = 0):
-                    newIntensity = 'Baja';
-                    break;
-                case (intensity = 1):
-                    newIntensity = 'Media';
-                    break;
-                case (intensity = 2):
-                    newIntensity = 'Alta';
-                    break;
-            }
-
-            return (
-                <>
-                    <main className="wrapperMain">
-                        <h3 className="titlePageMySelection">
-                            Mi propuesta de entrenamiento
-                        </h3>
-                        <div className="container__infoMySelection">
-                            <p>
-                                <b>Tiempo total ➜ </b> {time} minutos
-                            </p>
-                            <p>
-                                <b> Material necesario ➜ </b>{' '}
-                                {material ? material : 'Sin material'}
-                            </p>
-                            <p>
-                                <b> Intensidad ➜ </b> {newIntensity}
-                            </p>
-                        </div>
-
-                        {user.workouts && <WorkoutList></WorkoutList>}
-                    </main>
-                </>
-            );
+        user.workouts.forEach((item) => {
+            if (item.complementaryMaterial !== 'Sin material')
+                materials.add(item.complementaryMaterial);
+            time = item.duration + time;
+        });
+        const materialArray = Array.from(materials);
+        materialArray.forEach((item) => {
+            material = material + ' - ' + item;
+        });
+        let intensityArray: any = [];
+        user.workouts.forEach((item) =>
+            intensityArray.push(
+                intensityObj[item.intensity as 'Baja' | 'Media' | 'Alta']
+            )
+        );
+        let intensity = 0;
+        intensityArray.map((item: number) => (intensity = item + intensity));
+        intensity = Math.round(intensity / intensityArray.length);
+        let newIntensity = '';
+        switch (intensity) {
+            case (intensity = 0):
+                newIntensity = 'Baja';
+                break;
+            case (intensity = 1):
+                newIntensity = 'Media';
+                break;
+            case (intensity = 2):
+                newIntensity = 'Alta';
+                break;
         }
+
+        return (
+            <>
+                <main className="wrapperMain">
+                    <h3 className="titlePageMySelection">
+                        Mi propuesta de entrenamiento
+                    </h3>
+                    <div className="container__infoMySelection">
+                        <p>
+                            <b>Tiempo total ➜ </b> {time} minutos
+                        </p>
+                        <p>
+                            <b> Material necesario ➜ </b>{' '}
+                            {material ? material : 'Sin material'}
+                        </p>
+                        <p>
+                            <b> Intensidad ➜ </b> {newIntensity}
+                        </p>
+                    </div>
+
+                    {user.workouts && <WorkoutList></WorkoutList>}
+                </main>
+            </>
+        );
     }
 }
+// }
 
 export default MySelectionPage;
