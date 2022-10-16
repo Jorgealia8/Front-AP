@@ -8,12 +8,13 @@ import MySelectionPage from '../../pages/mySelectionPage/mySelectionPage';
 import FilterPage from '../../pages/filterPage/filterPage';
 import { iState } from '../../store/store';
 import './menu.css';
+import AllWorkoutsPage from '../../pages/workoutPage/allWorkoutsPage';
 
 const optionsMenu: aMenuItems = [
     {
-        path: 'disena',
+        path: 'workouts',
         label: 'Workouts',
-        page: <FilterPage />,
+        page: <AllWorkoutsPage />,
     },
     {
         path: 'disena',

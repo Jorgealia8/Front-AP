@@ -1,7 +1,13 @@
 .image {
-    width: 90%;
+    width: 85%;
 }
 .image:hover {
     transform: scale(1.15);
     transition: 0.5s;
+}
+
+@media (max-width: 600px) {
+    .image {
+        margin-bottom: 2rem;
+    }
 }

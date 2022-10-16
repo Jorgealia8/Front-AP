@@ -9,22 +9,11 @@
     text-align: center;
     list-style: none;
 }
-.iconBack {
-    width: 1.5rem;
-}
-.wrapperIconBack {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .paginationWorkout {
     display: flex;
-}
-.iconNext {
-    transform: rotate(-180deg);
-    width: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 @media (min-width: 600px) {

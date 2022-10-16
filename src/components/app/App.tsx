@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 import { Layout } from '../../core/layout/layout';
 import { aMenuItems } from '../../models/menu.model';
+import AllWorkoutsPage from '../../pages/workoutPage/allWorkoutsPage';
 import { loadUsersAction } from '../../redurcers/user.reducer/user.action.creators';
 import { loadWorkoutsAction } from '../../redurcers/workout.reducer/workout.action.creators';
 import { HttpStoreUser } from '../../services/repository.users';
@@ -53,6 +54,11 @@ function App() {
     );
 
     const options: aMenuItems = [
+        {
+            path: 'workouts',
+            label: 'Workouts',
+            page: <AllWorkoutsPage />,
+        },
         { path: '', label: 'home', page: <HomePage />, title: 'Home' },
         {
             path: 'details/:id',

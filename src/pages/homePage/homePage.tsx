@@ -46,7 +46,7 @@ export function HomePage() {
                 </div>
 
                 <div className="workoutsRecent">
-                    <p className="titleSection">Workouts recientes</p>
+                    <p className="titleSection">Últimos workouts</p>
                     <WorkoutListThree workouts={workouts}></WorkoutListThree>
                 </div>
 
