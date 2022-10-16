@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 import { useState } from 'react';
 import { iState } from '../../store/store';
 import { Link } from 'react-router-dom';
-import './workoutsPage.css';
+import './filterPage.css';
 import { AddFilter } from './helperAddFilterCategory';
 import { AddFilterMaterial } from './helperAddFilterMaterial';
 import Filter from '../../components/workout/workoutFilter/workoutFilter';

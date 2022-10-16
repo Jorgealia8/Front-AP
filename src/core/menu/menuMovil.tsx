@@ -7,7 +7,7 @@ import AboutMePage from '../../pages/aboutMePage/aboutMePage';
 import ContactPage from '../../pages/contactPage/contactPage';
 import LoginPage from '../../pages/loginPage/loginPage';
 import MySelectionPage from '../../pages/mySelectionPage/mySelectionPage';
-import WorkoutsPage from '../../pages/filterPage/workoutsPage';
+import FilterPage from '../../pages/filterPage/filterPage';
 import { iState } from '../../store/store';
 import './menu.css';
 export function MenuMovil() {
@@ -15,7 +15,7 @@ export function MenuMovil() {
         {
             path: 'disena',
             label: 'Diseña',
-            page: <WorkoutsPage />,
+            page: <FilterPage />,
             title: 'Diseña',
         },
         {

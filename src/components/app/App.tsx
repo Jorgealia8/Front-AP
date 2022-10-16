@@ -36,8 +36,8 @@ function App() {
     const DetailsPage = React.lazy(
         () => import('../../pages/detailsPage/detailsPage')
     );
-    const WorkoutsPage = React.lazy(
-        () => import('../../pages/filterPage/workoutsPage')
+    const FilterPage = React.lazy(
+        () => import('../../pages/filterPage/filterPage')
     );
     const MySelectionPage = React.lazy(
         () => import('../../pages/mySelectionPage/mySelectionPage')
@@ -63,7 +63,7 @@ function App() {
         {
             path: 'disena',
             label: 'Diseña',
-            page: <WorkoutsPage />,
+            page: <FilterPage />,
             title: 'Diseña',
         },
         {
