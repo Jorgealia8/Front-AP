@@ -5,11 +5,16 @@ import AboutMePage from '../../pages/aboutMePage/aboutMePage';
 import ContactPage from '../../pages/contactPage/contactPage';
 import LoginPage from '../../pages/loginPage/loginPage';
 import MySelectionPage from '../../pages/mySelectionPage/mySelectionPage';
-import WorkoutsPage from '../../pages/workoutsPage/workoutsPage';
+import WorkoutsPage from '../../pages/filterPage/workoutsPage';
 import { iState } from '../../store/store';
 import './menu.css';
 
 const optionsMenu: aMenuItems = [
+    {
+        path: 'disena',
+        label: 'Workouts',
+        page: <WorkoutsPage />,
+    },
     {
         path: 'disena',
         label: 'Diseña',

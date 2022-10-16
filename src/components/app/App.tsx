@@ -37,7 +37,7 @@ function App() {
         () => import('../../pages/detailsPage/detailsPage')
     );
     const WorkoutsPage = React.lazy(
-        () => import('../../pages/workoutsPage/workoutsPage')
+        () => import('../../pages/filterPage/workoutsPage')
     );
     const MySelectionPage = React.lazy(
         () => import('../../pages/mySelectionPage/mySelectionPage')
