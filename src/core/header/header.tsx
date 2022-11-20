@@ -42,7 +42,7 @@ export function Header() {
             <>
                 <div className="banner">
                     <p className="text-banner">
-                        WORKOUTS, HERRAMIENTAS, MOTIVACIÓN & MUCHO MÁSoca
+                        WORKOUTS, HERRAMIENTAS, MOTIVACIÓN & MUCHO MÁS
                     </p>
                 </div>
                 <div className="header">
