@@ -42,8 +42,7 @@ export function Header() {
             <>
                 <div className="banner">
                     <p className="text-banner">
-                        WORKOUTS, HERRAMIENTAS, MOTIVACIÓN & MUCHO MÁS POR SOLO
-                        19,90€
+                        WORKOUTS, HERRAMIENTAS, MOTIVACIÓN & MUCHO MÁSoca
                     </p>
                 </div>
                 <div className="header">
